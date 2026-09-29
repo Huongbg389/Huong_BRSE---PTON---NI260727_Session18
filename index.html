@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Quản lý danh sách sinh viên</h1>
+    <div class="container">
+      <form action="">
+        <div class="form-row">
+          <input id="name" type="text" placeholder="Tên sinh viên" />
+          <input id="age" type="number" placeholder="Tuổi" />
+        </div>
+        <div class="form-row">
+          <input id="class" type="text" placeholder="Lớp" />
+          <button id="btn-add" class="btn-add">Thêm sinh viên</button>
+          <button id="btn-update" class="btn-update">Câp Nhật</button>
+        </div>
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm sinh viên..."
+          style="width: 100%" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- <tr>
+            <td>Huấn</td>
+            <td>18</td>
+            <td>A1</td>
+            <td>
+              <div class="action-buttons">
+                <button class="btn-edit">Sửa</button>
+                <button class="btn-delete">Xóa</button>
+              </div>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
